@@ -4,9 +4,9 @@ import 'package:provider/provider.dart';
 
 import '../../models/place.dart';
 import '../shared/dialog.dart';
-import 'edit_place_screen.dart';
-import 'place_manager.dart';
-import 'user_place_screen.dart';
+import 'edit_room_screen.dart';
+import 'room_manager.dart';
+import 'user_room_screen.dart';
 
 class UserPlaceDetail extends StatefulWidget {
   const UserPlaceDetail({super.key});
@@ -42,9 +42,9 @@ class _UserPlaceDetailState extends State<UserPlaceDetail> {
     bool _isDelete = false;
     _isDelete = (await showConfirmDialog(context, "Bạn có chắc muốn xóa '${place.title}'"))!;
     if (_isDelete){
-      context.read<PlaceManager>().deletePlace(placeId);
+      context.read<RoomManager>().deletePlace(placeId);
       Navigator.of(context).pop();
-      Navigator.of(context).popAndPushNamed(UserPlaceScreen.routeName);
+      Navigator.of(context).popAndPushNamed(UserRoomScreen.routeName);
     }
   }
   @override
@@ -55,7 +55,7 @@ class _UserPlaceDetailState extends State<UserPlaceDetail> {
         leading: IconButton(
           onPressed: () {
             Navigator.of(context).pop();
-            Navigator.of(context).popAndPushNamed(UserPlaceScreen.routeName);
+            Navigator.of(context).popAndPushNamed(UserRoomScreen.routeName);
           },
           icon: const Icon(Icons.arrow_back_ios),
         ),
@@ -64,7 +64,7 @@ class _UserPlaceDetailState extends State<UserPlaceDetail> {
         actions: [
           IconButton(
             onPressed: () {
-                Navigator.of(context).pushNamed(EditPlaceScreen.routeName, arguments: {'place': place});       
+                Navigator.of(context).pushNamed(EditRoomScreen.routeName, arguments: {'place': place});       
             },
             icon: const Icon(FontAwesomeIcons.pen, size: 18)
           )

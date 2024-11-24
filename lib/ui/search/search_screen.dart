@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import '../../models/place.dart';
-import '../place/place_detail_screen.dart';
-import '../place/place_manager.dart';
+import '../place/room_detail_screen.dart';
+import '../place/room_manager.dart';
 import '../widgets/place_list.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -28,7 +28,7 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   void initState() {
     super.initState();
-    final placeManager = Provider.of<PlaceManager>(context, listen: false);
+    final placeManager = Provider.of<RoomManager>(context, listen: false);
     placeManager.loadPlaces(false).then((_) {
       setState(() {
         filteredPlaces = placeManager.places ?? [];
@@ -47,7 +47,7 @@ class _SearchScreenState extends State<SearchScreen> {
   void updateSearch(String query) {
     setState(() {
         searchQuery = query;
-        final places = Provider.of<PlaceManager>(context, listen: false).places ?? [];
+        final places = Provider.of<RoomManager>(context, listen: false).places ?? [];
         filteredPlaces = places.where((place) {
         final nameMatch = place.title.toLowerCase().contains(query.toLowerCase());
         final addressMatch = place.address.toLowerCase().contains(query.toLowerCase());
@@ -58,7 +58,7 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   Future<void> _refreshPlaces() async {
-    final placeManager = Provider.of<PlaceManager>(context, listen: false);
+    final placeManager = Provider.of<RoomManager>(context, listen: false);
     await placeManager.loadPlaces(false);
     setState(() {
       filteredPlaces = placeManager.places ?? [];
@@ -66,7 +66,7 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   void applyFilters() {
-    final placeManager = Provider.of<PlaceManager>(context, listen: false);
+    final placeManager = Provider.of<RoomManager>(context, listen: false);
     List<Place> places = placeManager.places ?? [];
     final filtered = places.where((place) {
       if (selectedRoomQuantity!= null){
@@ -623,7 +623,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             title: place.title,
                             price: place.price!,
                             ontap: () {
-                              Navigator.of(context).pushNamed(PlaceDetailScreen.routeName, arguments: {'placeId': place.id});
+                              Navigator.of(context).pushNamed(RoomDetailScreen.routeName, arguments: {'placeId': place.id});
                             },
                           );
                         },

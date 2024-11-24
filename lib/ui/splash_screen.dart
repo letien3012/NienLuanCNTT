@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
       await Future.delayed(const Duration(seconds: 2));
       Navigator.of(context).popAndPushNamed(MainScreen.routeName);
     } {
-      // await onboardManager.setHasSeenOnboarding();
+      await onboardManager.setHasSeenOnboarding();
       await Future.delayed(const Duration(seconds: 3));
       Navigator.of(context).popAndPushNamed(IntroScreen.routeName);
     }

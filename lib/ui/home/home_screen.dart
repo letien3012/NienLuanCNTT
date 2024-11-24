@@ -6,9 +6,9 @@ import 'package:provider/provider.dart';
 import '../../models/place.dart';
 import '../../models/user.dart';
 import '../auth/auth_manager.dart';
-import '../place/list_places_screen.dart';
-import '../place/place_detail_screen.dart';
-import '../place/place_manager.dart';
+import '../place/list_room_screen.dart';
+import '../place/room_detail_screen.dart';
+import '../place/room_manager.dart';
 import '../shared/custom_page_route.dart';
 
 class HomeScreens extends StatefulWidget {
@@ -28,12 +28,12 @@ class _HomeScreensState extends State<HomeScreens> {
   void initState() {
     super.initState();
     _fetchUser = context.read<AuthManager>().getUserInfo();
-    _fetchPlaces = context.read<PlaceManager>().fetchPlace(false);
+    _fetchPlaces = context.read<RoomManager>().fetchPlace(false);
   }
 
   Future<void> _refreshPlaces() async {
     setState(() {
-      _fetchPlaces = context.read<PlaceManager>().fetchPlace(false);
+      _fetchPlaces = context.read<RoomManager>().fetchPlace(false);
     });
   }
   @override
@@ -161,7 +161,7 @@ class _HomeScreensState extends State<HomeScreens> {
                             style: TextStyle(color: Colors.blueAccent),
                           ),
                           onPressed: () {
-                            Navigator.of(context).push(CustomPageRoute(page: ListPlacesScreen()));
+                            Navigator.of(context).push(CustomPageRoute(page: ListRoomScreen()));
                           },
                         ),
                       ],
@@ -231,7 +231,7 @@ class buildHomeScreen extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).pushNamed(
-          PlaceDetailScreen.routeName,
+          RoomDetailScreen.routeName,
           arguments: {'placeId': place.id},
         );
       },

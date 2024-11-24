@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'routes.dart';
 import 'ui/auth/auth_manager.dart';
 import 'ui/chat/chat_manager.dart';
-import 'ui/place/place_manager.dart';
+import 'ui/place/room_manager.dart';
 import 'ui/splash_screen.dart';
 
 
@@ -42,7 +42,7 @@ class _TravelAppState extends State<TravelApp> {
           create: (ctx) => ChatManager() 
         ),
         ChangeNotifierProvider(
-          create: (ctx) => PlaceManager() 
+          create: (ctx) => RoomManager() 
         ),
       ],
       child: MaterialApp(

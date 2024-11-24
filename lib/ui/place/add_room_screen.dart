@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 import '../main_screen.dart';
 import '../shared/custom_page_route.dart';
 import '../shared/dialog.dart';
-import 'place_manager.dart';
+import 'room_manager.dart';
 
 class AddRoomScreen extends StatefulWidget {
   const AddRoomScreen({super.key});
@@ -53,7 +53,7 @@ class _AddRoomScreenState extends State<AddRoomScreen> {
     try {
       FocusScope.of(context).unfocus();
       // print(_placeData);
-      await context.read<PlaceManager>().addPlace(_placeData);  
+      await context.read<RoomManager>().addPlace(_placeData);  
       // ScaffoldMessenger.of(context).showSnackBar(
       //   const SnackBar(content: Text('Thêm thành công!')),
       // );

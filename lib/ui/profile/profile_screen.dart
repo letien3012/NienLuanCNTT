@@ -9,7 +9,7 @@ import '../../models/user.dart';
 import '../auth/auth_manager.dart';
 import '../main_screen.dart';
 import '../place/add_room_screen.dart';
-import '../place/user_place_screen.dart';
+import '../place/user_room_screen.dart';
 import '../shared/custom_page_route.dart';
 import '../shared/dialog.dart';
 import '../widgets/profile_menu_widget.dart';
@@ -72,7 +72,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           child: Container(
                             width: 35,
                             height: 35,
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(100), color: Colors.blue),
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(100), color: Colors.redAccent ),
                             child: IconButton(
                               icon: const Icon(FontAwesomeIcons.pen),
                               color: Colors.white,
@@ -132,7 +132,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     // const SizedBox(height: 10),
                     if (snapshot.data!.role == 1)
                     ProfileMenuWidget(title: "Địa điểm đã đăng", icon: Icons.list_alt, onPress: () {
-                      Navigator.of(context).push(CustomPageRoute(page: UserPlaceScreen()));
+                      Navigator.of(context).push(CustomPageRoute(page: UserRoomScreen()));
                       // Navigator.of(context).pushNamed(UserPlaceScreen.routeName);
                     }),
                     if (snapshot.data!.role == 1)
