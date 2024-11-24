@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.3.0"
+    buildFolder="D:\PTUDDD\DoAn\ct48402-project-letien3012\build\app"
+    bootClassPath="D:\SDK-androidstudio\platforms\android-34\android.jar;D:\SDK-androidstudio\build-tools\30.0.3\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

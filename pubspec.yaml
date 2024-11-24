@@ -1,0 +1,40 @@
+name: NienLuan
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^10.7.0
+  smooth_page_indicator: ^1.2.0+3
+  salomon_bottom_bar: ^3.3.2
+  provider: ^6.1.2
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  flutter_dotenv: ^5.2.1
+  pocketbase: ^0.18.1
+  image_picker: ^1.1.2
+  path_provider: ^2.0.14
+  intl: ^0.17.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - .env
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon_launchers.jpg"
+
