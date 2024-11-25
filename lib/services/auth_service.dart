@@ -1,7 +1,5 @@
 import 'dart:io';
 import 'dart:typed_data';
-
-
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
@@ -190,7 +188,6 @@ class AuthService {
   Future<User> updateUserInfo(Map<String, dynamic> authData) async {
     final pb = await getPocketbaseInstance();
     final userId = pb.authStore.model.id;
-    final user = User(id: userId, email: authData['email'], name: authData['name'], phone: authData['phone'], address: authData['address'], city: authData['city'], district: authData['district']);
     try {
       final record = await pb.collection('users').update(
         userId,

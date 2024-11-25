@@ -1,46 +1,42 @@
 class ChatMessage {
-  String id; // ID của tin nhắn
+  String id; 
   String conservationId;
   String messageContent;
   String messageType;
-  bool
-      isDeletedForSender; // Trường kiểm tra tin nhắn đã bị xóa đối với người gửi
-  bool
-      isDeletedForReceiver; // Trường kiểm tra tin nhắn đã bị xóa đối với người nhận
+  bool isDeletedForSender; 
+  bool isDeletedForReceiver; 
 
   ChatMessage({
-    required this.id, // Đảm bảo truyền id khi khởi tạo
+    required this.id, 
     required this.conservationId,
     required this.messageContent,
     required this.messageType,
-    required this.isDeletedForSender, // Truyền giá trị isDeletedForSender
-    required this.isDeletedForReceiver, // Truyền giá trị isDeletedForReceiver
+    required this.isDeletedForSender, 
+    required this.isDeletedForReceiver, 
   });
 
-  // Chuyển đối tượng thành JSON
+  
   Map<String, dynamic> toJson() {
     return {
-      'id': id, // Bao gồm id trong JSON
+      'id': id, 
       'conservationId': conservationId,
       'messageContent': messageContent,
       'messageType': messageType,
-      'isDeletedForSender': isDeletedForSender, // Thêm trường xóa cho người gửi
-      'isDeletedForReceiver':
-          isDeletedForReceiver, // Thêm trường xóa cho người nhận
+      'isDeletedForSender': isDeletedForSender, 
+      'isDeletedForReceiver':isDeletedForReceiver, 
     };
   }
 
-  // Tạo đối tượng ChatMessage từ JSON
   factory ChatMessage.fromJson(Map<String, dynamic> json) {
     return ChatMessage(
-      id: json['id'] ?? '', // Lấy id từ response (nếu có)
+      id: json['id'] ?? '', 
       conservationId: json['conservationId'] ?? '',
       messageContent: json['messageContent'] ?? '',
       messageType: json['messageType'] ?? '',
       isDeletedForSender:
-          json['isDeletedForSender'] ?? false, // Lấy giá trị xóa cho người gửi
+          json['isDeletedForSender'] ?? false, 
       isDeletedForReceiver: json['isDeletedForReceiver'] ??
-          false, // Lấy giá trị xóa cho người nhận
+          false, 
     );
   }
 }

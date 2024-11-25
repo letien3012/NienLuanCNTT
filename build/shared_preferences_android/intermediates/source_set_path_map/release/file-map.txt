@@ -22,9 +22,9 @@ io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-savedst
 io.flutter.plugins.sharedpreferences.shared_preferences_android-jetified-lifecycle-process-2.7.0-21 C:\Users\TIEN\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\res
 io.flutter.plugins.sharedpreferences.shared_preferences_android-main-22 C:\Users\TIEN\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.3.3\android\src\main\res
 io.flutter.plugins.sharedpreferences.shared_preferences_android-release-23 C:\Users\TIEN\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.3.3\android\src\release\res
-io.flutter.plugins.sharedpreferences.shared_preferences_android-pngs-24 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\shared_preferences_android\generated\res\pngs\release
-io.flutter.plugins.sharedpreferences.shared_preferences_android-resValues-25 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\shared_preferences_android\generated\res\resValues\release
-io.flutter.plugins.sharedpreferences.shared_preferences_android-rs-26 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\shared_preferences_android\generated\res\rs\release
-io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-27 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\shared_preferences_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
-io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-28 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\shared_preferences_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-io.flutter.plugins.sharedpreferences.shared_preferences_android-merged_res-29 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\shared_preferences_android\intermediates\merged_res\release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-pngs-24 D:\NienLuanChuyenNganh\NienLuan\build\shared_preferences_android\generated\res\pngs\release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-resValues-25 D:\NienLuanChuyenNganh\NienLuan\build\shared_preferences_android\generated\res\resValues\release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-rs-26 D:\NienLuanChuyenNganh\NienLuan\build\shared_preferences_android\generated\res\rs\release
+io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-27 D:\NienLuanChuyenNganh\NienLuan\build\shared_preferences_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.sharedpreferences.shared_preferences_android-mergeReleaseResources-28 D:\NienLuanChuyenNganh\NienLuan\build\shared_preferences_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.sharedpreferences.shared_preferences_android-merged_res-29 D:\NienLuanChuyenNganh\NienLuan\build\shared_preferences_android\intermediates\merged_res\release

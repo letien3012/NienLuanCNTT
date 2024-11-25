@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import '../../models/place.dart';
-import '../place/room_detail_screen.dart';
-import '../place/room_manager.dart';
+import '../room/room_detail_screen.dart';
+import '../room/room_manager.dart';
 import '../widgets/place_list.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -72,7 +72,7 @@ class _SearchScreenState extends State<SearchScreen> {
       if (selectedRoomQuantity!= null){
          if (selectedRoomQuantity! > place.quantity!) return false;
       }
-      if (place.quantity == 0) return false;
+      // if (place.quantity == 0) return false;
       if (selectedRoomType != null && place.type != selectedRoomType) return false;
       if (selectedRoomFeature.isNotEmpty && selectedRoomType== 'Phòng trọ') {
         if (!selectedRoomFeature.contains(place.hasLoft)) return false;
@@ -129,7 +129,7 @@ class _SearchScreenState extends State<SearchScreen> {
                         label: city,
                         onSelected: (selected) {
                           setState(() {
-                            selectedCity = selected ? city : selectedCity;
+                            selectedCity = selected ? city : null;
                             districts = selected ? cityDistricts[city]! : [];
                             selectedDistrict = [];
                           });
@@ -353,7 +353,7 @@ class _SearchScreenState extends State<SearchScreen> {
                         label: room,
                         onSelected: (selected) {
                           setState(() {
-                            selectedRoomType = selected ? room : selectedRoomType;
+                            selectedRoomType = selected ? room : null;
                             roomFeature = selected ? rooms[room]! : [];
                             selectedRoomFeature = [];
                           });
@@ -443,6 +443,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   void showQuantityFilterModal(BuildContext context) {
   TextEditingController quantityController = TextEditingController(); 
+  quantityController.text = selectedRoomQuantity != null ? selectedRoomQuantity.toString() : '';
 
   showModalBottomSheet(
     context: context,
@@ -464,7 +465,6 @@ class _SearchScreenState extends State<SearchScreen> {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
-                // TextField to input room quantity
                 TextField(
                   controller: quantityController,
                   keyboardType: TextInputType.number,
@@ -479,10 +479,10 @@ class _SearchScreenState extends State<SearchScreen> {
                   children: [
                     TextButton(
                       onPressed: () {
-                        quantityController.clear(); // Clear the input field
+                        quantityController.clear(); 
                         setState(() {
-                          selectedRoomQuantity = null; // Reset quantity filter
-                          applyFilters(); // Apply the cleared filter
+                          selectedRoomQuantity = null; 
+                          applyFilters(); 
                           Navigator.of(context).pop();
                         });
                       },
@@ -503,7 +503,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           selectedRoomQuantity = int.parse(input);
                           applyFilters(); 
                         }
-                        Navigator.pop(context); // Close the modal
+                        Navigator.pop(context); 
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blueAccent,
@@ -684,37 +684,3 @@ class FilterChipWidget extends StatelessWidget {
   }
 }
 
-// class FilterChipWidget extends StatefulWidget {
-//   final String label;
-//   final Function(bool)? onSelected; 
-//   final isSelected;
-//   const FilterChipWidget({Key? key, required this.label, this.onSelected, this.isSelected}) : super(key: key);
-
-//   @override
-//   _FilterChipWidgetState createState() => _FilterChipWidgetState();
-// }
-
-// class _FilterChipWidgetState extends State<FilterChipWidget> {
-//   bool isSelected = false;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return FilterChip(
-//       label: Text(widget.label),
-//       labelStyle: TextStyle(
-//         color: isSelected ? Colors.white : Colors.black,
-//       ),
-//       backgroundColor: Colors.grey[200],
-//       selectedColor: Colors.redAccent,
-//       selected: isSelected,
-//       onSelected: (bool selected) {
-//         setState(() {
-//           isSelected = selected; // Cập nhật trạng thái isSelected
-//         });
-//         if (widget.onSelected != null) {
-//           widget.onSelected!(selected); // Gọi hàm onSelected nếu không null
-//         }
-//       },
-//     );
-//   }
-// }

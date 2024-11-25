@@ -1,13 +1,8 @@
-
-import 'package:http/http.dart' as http;
-import 'package:pocketbase/pocketbase.dart';
 import '../models/chat_message.dart';
 import '../models/chat_user.dart';
-import 'auth_service.dart';
 import 'pocketbase_client.dart';
 
 class ChatService {
-  final AuthService _authService = AuthService();
   Future<String> loadConservation(String userId1, String userId2) async {
     try {
       final pb = await getPocketbaseInstance();

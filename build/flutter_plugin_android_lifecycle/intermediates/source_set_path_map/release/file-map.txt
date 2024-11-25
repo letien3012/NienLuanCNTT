@@ -20,9 +20,9 @@ io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-savedstate-1.2.1-18
 io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-lifecycle-process-2.7.0-19 C:\Users\TIEN\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\res
 io.flutter.plugins.flutter_plugin_android_lifecycle-main-20 C:\Users\TIEN\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.23\android\src\main\res
 io.flutter.plugins.flutter_plugin_android_lifecycle-release-21 C:\Users\TIEN\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.23\android\src\release\res
-io.flutter.plugins.flutter_plugin_android_lifecycle-pngs-22 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\generated\res\pngs\release
-io.flutter.plugins.flutter_plugin_android_lifecycle-resValues-23 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\generated\res\resValues\release
-io.flutter.plugins.flutter_plugin_android_lifecycle-rs-24 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\generated\res\rs\release
-io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-25 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\intermediates\incremental\release\mergeReleaseResources\merged.dir
-io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-26 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-io.flutter.plugins.flutter_plugin_android_lifecycle-merged_res-27 D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\intermediates\merged_res\release
+io.flutter.plugins.flutter_plugin_android_lifecycle-pngs-22 D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\generated\res\pngs\release
+io.flutter.plugins.flutter_plugin_android_lifecycle-resValues-23 D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\generated\res\resValues\release
+io.flutter.plugins.flutter_plugin_android_lifecycle-rs-24 D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\generated\res\rs\release
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-25 D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-26 D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-merged_res-27 D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\intermediates\merged_res\release

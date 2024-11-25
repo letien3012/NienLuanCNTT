@@ -45,8 +45,8 @@ class User {
       name: name ?? this.name,
       avatar: avatar ?? this.avatar,
       imageUrl: imageUrl ?? this.imageUrl,
-      phone: "" ?? this.phone,
-      address: "" ?? this.address, 
+      phone: phone ?? this.phone,
+      address: address ?? this.address, 
     );
   }
   Map<String , dynamic> toJson(){

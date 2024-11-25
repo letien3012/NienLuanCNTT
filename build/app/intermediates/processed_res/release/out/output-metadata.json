@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.example.ct484_project",
+  "applicationId": "com.example.nienluan",
   "variantName": "release",
   "elements": [
     {
@@ -25,19 +25,6 @@
       "filters": [
         {
           "filterType": "ABI",
-          "value": "arm64-v8a"
-        }
-      ],
-      "attributes": [],
-      "versionCode": 2001,
-      "versionName": "1.0.0",
-      "outputFile": "resources-arm64-v8aRelease.ap_"
-    },
-    {
-      "type": "ONE_OF_MANY",
-      "filters": [
-        {
-          "filterType": "ABI",
           "value": "armeabi-v7a"
         }
       ],
@@ -45,6 +32,19 @@
       "versionCode": 1001,
       "versionName": "1.0.0",
       "outputFile": "resources-armeabi-v7aRelease.ap_"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 2001,
+      "versionName": "1.0.0",
+      "outputFile": "resources-arm64-v8aRelease.ap_"
     }
   ],
   "elementType": "File"

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ct484_project.app-mergeReleaseResources-27:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.nienluan.app-mergeReleaseResources-28:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\PTUDDD\\DoAn\\ct48402-project-letien3012\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\NienLuanChuyenNganh\\NienLuan\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

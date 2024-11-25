@@ -16,7 +16,7 @@ Future<PocketBase> getPocketbaseInstance() async {
   );
 
   final baseUrl = dotenv.env['POCKETBASE_URL'] ?? 'http://10.0.2.2:8090/';
-  // http://10.0.2.2:8090
+  // http://10.0.2.2:8090/
   // _pocketbase = PocketBase(baseUrl);
   _pocketbase = PocketBase(baseUrl, authStore: store);
   return  _pocketbase!;

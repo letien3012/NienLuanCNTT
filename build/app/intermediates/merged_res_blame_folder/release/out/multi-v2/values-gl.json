@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ct484_project.app-mergeReleaseResources-27:/values-gl/values-gl.xml",
+            "outputFile": "com.example.nienluan.app-mergeReleaseResources-28:/values-gl/values-gl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\TIEN\\.gradle\\caches\\transforms-3\\54a4cfbaad86b9ab2273ca8263e4a153\\transformed\\core-1.13.1\\res\\values-gl\\values-gl.xml",

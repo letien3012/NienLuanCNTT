@@ -74,12 +74,12 @@ class _SigninScreenState extends State<SigninScreen> {
                 const SizedBox(height: 30,),
                 _buildPasswordField(),
                 const SizedBox(height: 20,),
-                Align(
-                  child: TextButton(onPressed: (){}, 
-                    child: Text('Quên mật khẩu?',style: TextStyle(color: Colors.redAccent)),
-                  ), 
-                  alignment: Alignment.topRight,
-                ),
+                // Align(
+                //   child: TextButton(onPressed: (){}, 
+                //     child: Text('Quên mật khẩu?',style: TextStyle(color: Colors.redAccent)),
+                //   ), 
+                //   alignment: Alignment.topRight,
+                // ),
                 const SizedBox(height: 20,),
                 ValueListenableBuilder<bool>(
                   valueListenable: _isSubmitting,

@@ -6,9 +6,9 @@ import 'package:provider/provider.dart';
 import '../../models/place.dart';
 import '../../models/user.dart';
 import '../auth/auth_manager.dart';
-import '../place/list_room_screen.dart';
-import '../place/room_detail_screen.dart';
-import '../place/room_manager.dart';
+import '../room/list_room_screen.dart';
+import '../room/room_detail_screen.dart';
+import '../room/room_manager.dart';
 import '../shared/custom_page_route.dart';
 
 class HomeScreens extends StatefulWidget {
@@ -23,7 +23,7 @@ class HomeScreens extends StatefulWidget {
 class _HomeScreensState extends State<HomeScreens> {
   late Future<User> _fetchUser;
   late Future<List<Place>> _fetchPlaces;
-
+  late User user;
   @override
   void initState() {
     super.initState();
@@ -66,7 +66,7 @@ class _HomeScreensState extends State<HomeScreens> {
                             } else if (snapshot.hasError) {
                               return Center(child: Text('Lỗi: ${snapshot.error}'));
                             } else if (snapshot.hasData) {
-                              final user = snapshot.data!;
+                              user = snapshot.data!;
                               return Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
@@ -116,36 +116,6 @@ class _HomeScreensState extends State<HomeScreens> {
                             }
                           },
                         ),
-                        const Row(
-                          children: [
-                            Text(
-                              'Bắt đầu',
-                              style: TextStyle(
-                                fontSize: 32.0,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ],
-                        ),
-                        const Row(
-                          children: [
-                            Text(
-                              'Tìm kiếm',
-                              style: TextStyle(
-                                fontSize: 32.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              ' Phòng trọ!',
-                              style: TextStyle(
-                                fontSize: 32.0,
-                                color: Colors.redAccent,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
                       ],
                     ),
                     Row(
@@ -171,7 +141,7 @@ class _HomeScreensState extends State<HomeScreens> {
                       shrinkWrap: true,
                       itemCount: placeList.length,
                       itemBuilder: (context, index) {
-                        final place = placeList[index];
+                        final place = placeList[index];                     
                         return FutureBuilder<User>(
                           future: context.read<AuthManager>().getUserInfoById(place.userId!),
                           builder: (context, userSnapshot) {
@@ -180,11 +150,11 @@ class _HomeScreensState extends State<HomeScreens> {
                             } else if (userSnapshot.hasError) {
                               return Center(child: Text('Lỗi: ${userSnapshot.error}'));
                             } else if (userSnapshot.hasData) {
-                              final user = userSnapshot.data!;
+                              final userPost = userSnapshot.data!;
                               return buildHomeScreen(
                                 place: place,
-                                userAvatarUrl: user.imageUrl,
-                                userName: user.name,
+                                userAvatarUrl: userPost.imageUrl,
+                                userName: userPost.name,
                               );
                             } else {
                               return const Center(child: Text('Không có thông tin người dùng'));

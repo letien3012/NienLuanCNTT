@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is D:\PTUDDD\DoAn\ct48402-project-letien3012\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0
+# The proguard configuration file for the following section is D:\NienLuanChuyenNganh\NienLuan\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -116,7 +116,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from D:\PTUDDD\DoAn\ct48402-project-letien3012\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0
+# End of content from D:\NienLuanChuyenNganh\NienLuan\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0
 # The proguard configuration file for the following section is D:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
@@ -127,17 +127,17 @@
 -dontwarn android.**
 
 # End of content from D:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
-# The proguard configuration file for the following section is D:\PTUDDD\DoAn\ct48402-project-letien3012\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# The proguard configuration file for the following section is D:\NienLuanChuyenNganh\NienLuan\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 -keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
--keep class com.example.ct484_project.MainActivity { <init>(); }
+-keep class com.example.nienluan.MainActivity { <init>(); }
 -keep class com.google.android.gms.metadata.ModuleDependencies { <init>(); }
 -keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
 
-# End of content from D:\PTUDDD\DoAn\ct48402-project-letien3012\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
-# The proguard configuration file for the following section is D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
+# End of content from D:\NienLuanChuyenNganh\NienLuan\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# The proguard configuration file for the following section is D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
 # The point of this package is to specify that a dependent plugin intends to
 # use the AndroidX lifecycle classes. Make sure no R8 heuristics shrink classes
 # brought in by the embedding's pom.
@@ -148,7 +148,7 @@
 # https://issuetracker.google.com/issues/142778206.
 -keep class androidx.lifecycle.DefaultLifecycleObserver
 
-# End of content from D:\PTUDDD\DoAn\ct48402-project-letien3012\build\flutter_plugin_android_lifecycle\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
+# End of content from D:\NienLuanChuyenNganh\NienLuan\build\flutter_plugin_android_lifecycle\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\TIEN\.gradle\caches\transforms-3\902e93687bfec424d7d681c16d78dd10\transformed\fragment-1.7.1\proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #
@@ -423,6 +423,23 @@
 }
 
 # End of content from C:\Users\TIEN\.gradle\caches\transforms-3\b57b22230cc44b180023cec374483400\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+# The proguard configuration file for the following section is C:\Users\TIEN\.gradle\caches\transforms-3\46cdf010724d9a2992f564e9e70614a7\transformed\rules\lib\META-INF\proguard\protobuf.pro
+# Recently Protobuf Javalite introduced a change that relies on reflection,
+# which doesn't work with Proguard. This rule keeps the reflection usages in
+# (shaded) Protobuf classes in Tink as-is.
+# The location of this file is determined by
+# - https://developer.android.com/studio/build/shrink-code#configuration-files
+# - https://docs.bazel.build/versions/master/be/java.html#java_library.resources
+# See also:
+# - https://github.com/google/tink/issues/361
+# - https://github.com/protocolbuffers/protobuf/issues/6463
+# WARNING: the shaded package name com.google.crypto.tink.shaded.protobuf must
+# be kept in sync with jar_jar_rules.txt.
+-keepclassmembers class * extends com.google.crypto.tink.shaded.protobuf.GeneratedMessageLite {
+  <fields>;
+}
+
+# End of content from C:\Users\TIEN\.gradle\caches\transforms-3\46cdf010724d9a2992f564e9e70614a7\transformed\rules\lib\META-INF\proguard\protobuf.pro
 # The proguard configuration file for the following section is <unknown>
 -ignorewarnings
 # End of content from <unknown>

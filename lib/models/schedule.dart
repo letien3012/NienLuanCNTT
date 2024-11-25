@@ -54,7 +54,7 @@ class Schedule {
       'startDate': startDate,
       'endDate': endDate,
       'budget': budget,
-      'imageUrl': imageUrl,  // Include imageUrl in the JSON if needed
+      'imageUrl': imageUrl, 
       'destination': destination,
     };
   }

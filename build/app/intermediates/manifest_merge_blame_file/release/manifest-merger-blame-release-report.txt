@@ -1,18 +1,18 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.ct484_project"
+3    package="com.example.nienluan"
 4    android:versionCode="4001"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml
+8-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="34" />
-9-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml
+9-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:2:5-66
-11-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:2:22-64
+11-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:2:5-66
+11-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:2:22-64
 12    <!--
 13         Required to query activities that can process text, see:
 14         https://developer.android.com/training/package-visibility and
@@ -21,57 +21,57 @@
 17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 18    -->
 19    <queries>
-19-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:41:5-46:15
+19-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:41:5-46:15
 20        <intent>
-20-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:42:9-45:18
+20-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:42:9-45:18
 21            <action android:name="android.intent.action.PROCESS_TEXT" />
-21-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:43:13-72
-21-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:43:21-70
+21-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:43:13-72
+21-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:43:21-70
 22
 23            <data android:mimeType="text/plain" />
-23-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:44:13-50
-23-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:44:19-48
+23-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:44:13-50
+23-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:44:19-48
 24        </intent>
 25    </queries>
 26
 27    <permission
 27-->[androidx.core:core:1.13.1] C:\Users\TIEN\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-28        android:name="com.example.ct484_project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28        android:name="com.example.nienluan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 28-->[androidx.core:core:1.13.1] C:\Users\TIEN\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 29        android:protectionLevel="signature" />
 29-->[androidx.core:core:1.13.1] C:\Users\TIEN\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 30
-31    <uses-permission android:name="com.example.ct484_project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31    <uses-permission android:name="com.example.nienluan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 31-->[androidx.core:core:1.13.1] C:\Users\TIEN\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 31-->[androidx.core:core:1.13.1] C:\Users\TIEN\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 32
 33    <application
 34        android:name="android.app.Application"
-34-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:5:9-42
+34-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:5:9-42
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 35-->[androidx.core:core:1.13.1] C:\Users\TIEN\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 36        android:icon="@mipmap/app_icon"
-36-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:6:9-40
-37        android:label="Travel App" >
-37-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:4:9-35
+36-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:6:9-40
+37        android:label="Tìm Trọ Nhanh" >
+37-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:4:9-38
 38        <activity
-38-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:7:9-29:20
-39            android:name="com.example.ct484_project.MainActivity"
-39-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:8:13-41
+38-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:7:9-29:20
+39            android:name="com.example.nienluan.MainActivity"
+39-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:8:13-41
 40            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-40-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:13:13-163
+40-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:13:13-163
 41            android:exported="true"
-41-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:9:13-36
+41-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:9:13-36
 42            android:hardwareAccelerated="true"
-42-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:14:13-47
+42-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:14:13-47
 43            android:launchMode="singleTop"
-43-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:10:13-43
+43-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:10:13-43
 44            android:taskAffinity=""
-44-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:11:13-36
+44-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:11:13-36
 45            android:theme="@style/LaunchTheme"
-45-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:12:13-47
+45-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:12:13-47
 46            android:windowSoftInputMode="adjustResize" >
-46-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:15:13-55
+46-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:15:13-55
 47
 48            <!--
 49                 Specifies an Android theme to apply to this Activity as soon as
@@ -80,21 +80,21 @@
 52                 to determine the Window background behind the Flutter UI.
 53            -->
 54            <meta-data
-54-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:21:13-24:17
+54-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:21:13-24:17
 55                android:name="io.flutter.embedding.android.NormalTheme"
-55-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:22:15-70
+55-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:22:15-70
 56                android:resource="@style/NormalTheme" />
-56-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:23:15-52
+56-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:23:15-52
 57
 58            <intent-filter>
-58-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:25:13-28:29
+58-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:25:13-28:29
 59                <action android:name="android.intent.action.MAIN" />
-59-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:26:17-68
-59-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:26:25-66
+59-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:26:17-68
+59-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:26:25-66
 60
 61                <category android:name="android.intent.category.LAUNCHER" />
-61-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:27:17-76
-61-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:27:27-74
+61-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:27:17-76
+61-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:27:27-74
 62            </intent-filter>
 63        </activity>
 64        <!--
@@ -102,50 +102,50 @@
 66             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 67        -->
 68        <meta-data
-68-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:32:9-34:33
+68-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:32:9-34:33
 69            android:name="flutterEmbedding"
-69-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:33:13-44
+69-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:33:13-44
 70            android:value="2" />
-70-->D:\PTUDDD\DoAn\ct48402-project-letien3012\android\app\src\main\AndroidManifest.xml:34:13-30
+70-->D:\NienLuanChuyenNganh\NienLuan\android\app\src\main\AndroidManifest.xml:34:13-30
 71
 72        <provider
-72-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-19:20
+72-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-19:20
 73            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-73-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-82
-74            android:authorities="com.example.ct484_project.flutter.image_provider"
-74-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-74
+73-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-82
+74            android:authorities="com.example.nienluan.flutter.image_provider"
+74-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-74
 75            android:exported="false"
-75-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+75-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
 76            android:grantUriPermissions="true" >
-76-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-47
+76-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-47
 77            <meta-data
-77-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-18:75
+77-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-18:75
 78                android:name="android.support.FILE_PROVIDER_PATHS"
-78-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-67
+78-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-67
 79                android:resource="@xml/flutter_image_picker_file_paths" />
-79-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:18:17-72
+79-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:18:17-72
 80        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
 81        <service
-81-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33:19
+81-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33:19
 82            android:name="com.google.android.gms.metadata.ModuleDependencies"
-82-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-78
+82-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-78
 83            android:enabled="false"
-83-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-36
+83-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-36
 84            android:exported="false" >
-84-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+84-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
 85            <intent-filter>
-85-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-28:29
+85-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-28:29
 86                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
-86-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-94
-86-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-91
+86-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-94
+86-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-91
 87            </intent-filter>
 88
 89            <meta-data
-89-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-32:36
+89-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-32:36
 90                android:name="photopicker_activity:0:required"
-90-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-63
+90-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-63
 91                android:value="" />
-91-->[:image_picker_android] D:\PTUDDD\DoAn\ct48402-project-letien3012\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-33
+91-->[:image_picker_android] D:\NienLuanChuyenNganh\NienLuan\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-33
 92        </service>
 93
 94        <uses-library
@@ -165,7 +165,7 @@
 101-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TIEN\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
 102            android:name="androidx.startup.InitializationProvider"
 102-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TIEN\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
-103            android:authorities="com.example.ct484_project.androidx-startup"
+103            android:authorities="com.example.nienluan.androidx-startup"
 103-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TIEN\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
 104            android:exported="false" >
 104-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\TIEN\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
